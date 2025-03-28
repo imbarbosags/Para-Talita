@@ -3,11 +3,6 @@ let naoButton = document.getElementById("nao");
 let clicks = 0;
 let maxTries = 5;
 
-function changeBackground() {
-    document.body.style.backgroundColor = (document.body.style.backgroundColor === "purple") ? "blue" : "purple";
-}
-setInterval(changeBackground, 1000);
-
 simButton.addEventListener("mouseover", function() {
     if (clicks < maxTries) {
         let x = Math.random() * (window.innerWidth - 100);
@@ -19,8 +14,8 @@ simButton.addEventListener("mouseover", function() {
 });
 
 simButton.addEventListener("click", function() {
-    window.location.href = "https://www.youtube.com/watch?v=r3Pr1_v7hsw";
     alert("Você não desistiu do nosso amor. Agora, ouça isso: ");
+    window.location.href = "https://www.youtube.com/watch?v=r3Pr1_v7hsw";
 });
 
 naoButton.addEventListener("click", function() {
